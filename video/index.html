@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir Vídeo</title>
+    <link rel="stylesheet" href="../video/video.css"> <!-- Caminho relativo para o arquivo CSS principal -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Link para o CSS do Swiper -->
+</head>
+<body>
+    <!-- Título com corações -->
+    <header class="title-container">
+        <img src="../corações2.png" alt="Corações Esquerda" class="heart-left">
+        <h1>Aqui você pode entender um pouco do que te falo todos os dias!</h1>
+        <img src="../corações1.png" alt="Corações Direita" class="heart-right">
+    </header>
+
+    <!-- Contêiner do vídeo com estilo refinado -->
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ID_DO_VIDEO_AQUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Botão para voltar -->
+    <div class="button-container">
+        <a href="../index.html" class="button">Voltar para a página inicial</a>
+    </div>
+
+    <!-- Script para aplicar o modo escuro após o carregamento da página -->
+    <script>
+        window.addEventListener('load', function() {
+            // Adiciona a classe 'dark-mode' ao body após a página carregar
+            document.body.classList.add('dark-mode');
+        });
+    </script>
+
+    <!-- Script do Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            grabCursor: true,  // Ativa o comportamento de arrastar para mover
+            loop: true,        // Habilita loop de imagens
+            touchEventsTarget: 'container', // Permite arrastar com toque diretamente no container
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>

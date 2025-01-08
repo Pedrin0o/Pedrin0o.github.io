@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para a fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link do CSS do Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Link para o Lightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Título com corações -->
+    <header class="title-container">
+        <img src="corações2.png" alt="Corações Esquerda" class="heart-left">
+        <h1>Meu amor, dedico a você esse site, para dizer o quanto eu te amo!</h1>
+        <img src="corações1.png" alt="Corações Direita" class="heart-right">
+    </header>
+
+    <!-- Texto principal no centro -->
+    <div class="content">
+        <p>
+            O brilho dos seus olhos me tira de um vazio escuro e frio, trazendo-me de volta à luz com simples palavras.
+            Amar você é a melhor coisa que faço todos os dias, porque você sem dúvida é muito importante para mim.
+            
+            Tenho tanto orgulho da mulher incrível que você é. Sei que falo isso muitas vezes, mas é difícil acreditar que você realmente entende o quanto. Por isso, amo repetir: eu te amo.
+            
+            Basta um clique no link abaixo para sempre lembrar disso, mesmo quando eu não estiver ao seu lado.
+            E enquanto eu puder falar, digitar ou escrever, vou encontrar uma forma de te dizer isso. Nem que seja em outra língua, porque dizer que te amo é o meu jeitinho favorito de te amar.
+        </p>
+    </div>
+
+    <!-- Título do Carrossel -->
+    <div class="timeline-title">
+        <h2> Nossa linha do tempo </h2>
+    </div>
+
+    <!-- Carrossel de imagens -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Cada imagem agora tem um link para abrir no lightbox -->
+            <div class="swiper-slide">
+                <a href="Nós.jpg" data-lightbox="timeline" data-title="Foto 1"><img src="Nós.jpg" alt="Foto 1"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós1.jpg" data-lightbox="timeline" data-title="Foto 2"><img src="Nós1.jpg" alt="Foto 2"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós2.jpg" data-lightbox="timeline" data-title="Foto 3"><img src="Nós2.jpg" alt="Foto 3"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós3.jpg" data-lightbox="timeline" data-title="Foto 4"><img src="Nós3.jpg" alt="Foto 4"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós4.jpg" data-lightbox="timeline" data-title="Foto 5"><img src="Nós4.jpg" alt="Foto 5"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós5.jpg" data-lightbox="timeline" data-title="Foto 6"><img src="Nós5.jpg" alt="Foto 6"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós6.jpg" data-lightbox="timeline" data-title="Foto 7"><img src="Nós6.jpg" alt="Foto 7"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="Nós7.jpg" data-lightbox="timeline" data-title="Foto 8"><img src="Nós7.jpg" alt="Foto 8"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão -->
+    <div class="button-container">
+        <a href="video/index.html" class="button">
+            <img src="botão.png" alt="Botão Clique Aqui" class="button-icon">
+        </a>
+    </div>
+    
+    
+
+    <!-- Script do Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Script do Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            grabCursor: true,  // Ativa o comportamento de arrastar para mover
+            loop: true,        // Habilita loop de imagens
+            touchEventsTarget: 'container', // Permite arrastar com toque diretamente no container
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
