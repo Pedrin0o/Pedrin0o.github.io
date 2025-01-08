@@ -30,20 +30,6 @@ body {
     width: 100%;
 }
 
-.heart-left, .heart-right {
-    width: 40px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.heart-left {
-    transform: rotate(-15deg);
-}
-
-.heart-right {
-    transform: rotate(15deg);
-}
-
 /* Texto principal */
 .content {
     padding: 1.5rem;
@@ -130,9 +116,6 @@ body {
         font-size: 1.4rem;
     }
 
-    .heart-left, .heart-right {
-        width: 35px;
-    }
 
     .content {
         padding: 1.5rem;
@@ -147,17 +130,13 @@ body {
     }
 
     .button img {
-        width: 100px; /* Ajuste de tamanho para botão */
+        width: 150px; /* Ajuste de tamanho para botão */
     }
 }
 
 @media (max-width: 480px) {
     .title-container h1 {
         font-size: 1.2rem;
-    }
-
-    .heart-left, .heart-right {
-        width: 30px; /* Ajuste dos corações para telas muito pequenas */
     }
 
     .content p {
@@ -169,7 +148,7 @@ body {
     }
 
     .button img {
-        width: 80px; /* Tamanho menor para o botão */
+        width: 130px; /* Tamanho menor para o botão */
     }
 
     .timeline-title h2 {
