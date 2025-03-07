@@ -1,4 +1,5 @@
 /* Estilo geral */
+/* Corpo da página */
 body {
     margin: 0;
     padding: 0;
@@ -7,11 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #000;
-    height: 100vh; /* Altura total da tela */
-    text-align: center; /* Centraliza o texto */
-    transition: background-color 1s ease-in-out; /* Transição mais rápida para a cor de fundo */
+    height: 100vh; /* Certifica-se de que o corpo ocupe 100% da altura da tela */
+    text-align: center; /* Centraliza o conteúdo dentro do body */
+    transition: background-color 1s ease-in-out; /* Transição suave */
 }
+
 
 /* Título com corações */
 .title-container {
@@ -39,12 +40,7 @@ h1 {
     flex-direction: column; /* Coloca os botões em coluna */
     gap: 20px; /* Espaçamento entre os botões */
     align-items: center;
-    margin-top: 50px; /* Ajusta o espaçamento do topo */
-}
-
-/* Botão de vídeo */
-.video-button-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Ajusta o espaçamento do topo */
 }
 
 /* Estilo dos botões */
@@ -65,14 +61,13 @@ h1 {
     color: white; /* Cor do texto do botão de vídeo */
     width: 100%; /* Faz o botão ocupar toda a largura disponível */
     max-width: 300px; /* Largura máxima para o botão */
+    margin-bottom: 30px; /* Adiciona um espaçamento abaixo do botão */
 }
 
 /* Hover para o botão de vídeo */
 .button.video-button:hover {
     background-color: #c82333; /* Vermelho escuro ao passar o mouse */
 }
-
-/* Modo claro (inicial) */
 body {
     background-color: #f2f2f2; /* Cor de fundo clara */
     color: #000; /* Cor de texto escuro */
