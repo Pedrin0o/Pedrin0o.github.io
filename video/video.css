@@ -26,6 +26,8 @@ body {
 }
 
 h1 {
+    top: 10px; /* Distância do topo da tela */
+    left: 50%; /* Centraliza horizontalmente */
     height: 100vh; /* Certifica-se de que o corpo ocupe 100% da altura da tela */
     width: 100%; /* Certifica-se de que a largura ocupe 100% */
     text-align: center; /* Centraliza o conteúdo horizontalmente */
