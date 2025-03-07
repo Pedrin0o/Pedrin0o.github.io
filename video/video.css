@@ -31,7 +31,6 @@ h1 {
     width: 100%;
 }
 
-
 /* Estilo do contêiner de vídeo */
 .video-container {
     margin-top: 20px;
@@ -57,7 +56,7 @@ iframe {
     height: auto;
 }
 
-/* Botão */
+/* Botões */
 .button-container {
     margin-top: 20px;
     text-align: center;
@@ -72,6 +71,7 @@ iframe {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 10px; /* Espaçamento entre os botões */
 }
 
 .button:hover {
@@ -115,7 +115,6 @@ body {
         text-align: center;
     }
 
-
     .video-wrapper {
         padding: 10px;
         width: 95%;
@@ -124,6 +123,7 @@ body {
     .button {
         width: 80%;
         padding: 12px 0;
+        margin-bottom: 15px; /* Mais espaço entre os botões em telas pequenas */
     }
 }
 
@@ -136,7 +136,6 @@ body {
         font-size: 1.2rem;
     }
 
-
     .video-wrapper {
         padding: 8px;
     }
@@ -144,5 +143,6 @@ body {
     .button {
         width: 70%;
         padding: 10px 0;
+        margin-bottom: 12px; /* Mais espaço entre os botões em telas pequenas */
     }
 }
