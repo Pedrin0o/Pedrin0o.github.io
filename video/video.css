@@ -8,6 +8,8 @@ body {
     align-items: center;
     flex-direction: column;
     color: #000;
+    height: 100vh; /* Altura total da tela */
+    text-align: center; /* Centraliza o texto */
     transition: background-color 1s ease-in-out; /* Transição mais rápida para a cor de fundo */
 }
 
@@ -18,7 +20,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    flex-wrap: wrap; /* Permite que os elementos se ajustem no mobile */
+    flex-wrap: wrap;
     transition: color 1s ease-in-out; /* Transição para o título */
 }
 
@@ -31,31 +33,6 @@ h1 {
     width: 100%;
 }
 
-/* Estilo do contêiner de vídeo */
-.video-container {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    transition: background-color 1s ease-in-out; /* Transição para o fundo do vídeo */
-}
-
-.video-wrapper {
-    width: 90%;
-    max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: background-color 1s ease-in-out;
-}
-
-iframe {
-    border-radius: 10px;
-    width: 100%; /* Ajusta a largura do iframe para ocupar 100% da largura disponível */
-    height: auto;
-}
-
 /* Botões */
 .button-container {
     display: flex;
@@ -65,7 +42,12 @@ iframe {
     margin-top: 50px; /* Ajusta o espaçamento do topo */
 }
 
-/* Botões */
+/* Botão de vídeo */
+.video-button-container {
+    margin-top: 20px;
+}
+
+/* Estilo dos botões */
 .button {
     background-color: #d36ed3; /* Cor do fundo do botão */
     color: white; /* Cor do texto */
@@ -81,15 +63,11 @@ iframe {
 .button.video-button {
     background-color: #e63946; /* Cor vermelha para o botão de vídeo */
     color: white; /* Cor do texto do botão de vídeo */
-    margin-top: 20px; /* Garante que o botão de vídeo tenha um espaço acima dele */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    max-width: 300px; /* Largura máxima para o botão */
 }
 
-.button:hover {
-    background-color: #803b73;
-    transform: scale(1.1);
-}
-
-/* Hover específico para o botão de vídeo */
+/* Hover para o botão de vídeo */
 .button.video-button:hover {
     background-color: #c82333; /* Vermelho escuro ao passar o mouse */
 }
@@ -110,10 +88,6 @@ body {
     color: #fff; /* Título branco no modo escuro */
 }
 
-.dark-mode .video-wrapper {
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para o vídeo */
-}
-
 .dark-mode .button {
     background-color: #6a4b8d; /* Botão com cor de fundo mais escura */
 }
@@ -127,22 +101,15 @@ body {
     h1 {
         font-size: 1.3rem;
         margin: 10px;
-        text-align: center;
     }
 
-    .video-wrapper {
-        padding: 10px;
-        width: 95%;
+    .button-container {
+        gap: 25px; /* Aumenta o espaçamento entre os botões em telas pequenas */
     }
 
     .button {
         width: 80%;
         padding: 12px 0;
-        margin-bottom: 20px; /* Mais espaçamento entre os botões em telas pequenas */
-    }
-
-    .button-container {
-        gap: 25px; /* Aumenta o espaçamento entre os botões em telas pequenas */
     }
 }
 
@@ -155,17 +122,8 @@ body {
         font-size: 1.2rem;
     }
 
-    .video-wrapper {
-        padding: 8px;
-    }
-
     .button {
         width: 70%;
         padding: 10px 0;
-        margin-bottom: 15px; /* Mais espaçamento entre os botões em telas pequenas */
-    }
-
-    .button-container {
-        gap: 20px; /* Ajusta o espaçamento entre os botões para telas ainda menores */
     }
 }
