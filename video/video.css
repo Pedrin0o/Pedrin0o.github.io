@@ -26,6 +26,9 @@ body {
 }
 
 h1 {
+    height: 100vh; /* Certifica-se de que o corpo ocupe 100% da altura da tela */
+    width: 100%; /* Certifica-se de que a largura ocupe 100% */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
     font-size: 1.6rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
