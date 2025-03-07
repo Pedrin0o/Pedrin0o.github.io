@@ -58,8 +58,11 @@ iframe {
 
 /* Botões */
 .button-container {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 30px; /* Aumenta o espaçamento superior para os botões */
+    display: flex;
+    flex-direction: column; /* Coloca os botões em coluna */
+    gap: 20px; /* Espaçamento entre os botões */
+    align-items: center;
 }
 
 .button {
@@ -71,7 +74,6 @@ iframe {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-bottom: 10px; /* Espaçamento entre os botões */
 }
 
 .button:hover {
@@ -123,7 +125,11 @@ body {
     .button {
         width: 80%;
         padding: 12px 0;
-        margin-bottom: 15px; /* Mais espaço entre os botões em telas pequenas */
+        margin-bottom: 20px; /* Mais espaçamento entre os botões em telas pequenas */
+    }
+
+    .button-container {
+        gap: 25px; /* Aumenta o espaçamento entre os botões em telas pequenas */
     }
 }
 
@@ -143,6 +149,10 @@ body {
     .button {
         width: 70%;
         padding: 10px 0;
-        margin-bottom: 12px; /* Mais espaço entre os botões em telas pequenas */
+        margin-bottom: 15px; /* Mais espaçamento entre os botões em telas pequenas */
+    }
+
+    .button-container {
+        gap: 20px; /* Ajusta o espaçamento entre os botões para telas ainda menores */
     }
 }
