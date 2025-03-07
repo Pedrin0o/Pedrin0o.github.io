@@ -58,11 +58,11 @@ iframe {
 
 /* Botões */
 .button-container {
-    margin-top: 50px; /* Aumenta o espaçamento superior para os botões */
     display: flex;
     flex-direction: column; /* Coloca os botões em coluna */
-    gap: 40px; /* Aumenta o espaçamento entre os botões */
+    gap: 20px; /* Espaçamento entre os botões */
     align-items: center;
+    margin-top: 50px; /* Ajusta o espaçamento do topo */
 }
 
 /* Botões */
@@ -81,6 +81,7 @@ iframe {
 .button.video-button {
     background-color: #e63946; /* Cor vermelha para o botão de vídeo */
     color: white; /* Cor do texto do botão de vídeo */
+    margin-top: 20px; /* Garante que o botão de vídeo tenha um espaço acima dele */
 }
 
 .button:hover {
